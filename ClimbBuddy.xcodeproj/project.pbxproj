@@ -15,6 +15,8 @@
 		64A9F43421378EBD00E49C01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A9F43221378EBD00E49C01 /* LaunchScreen.storyboard */; };
 		64A9F43F21378EBD00E49C01 /* ClimbBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F43E21378EBD00E49C01 /* ClimbBuddyTests.swift */; };
 		64A9F44A21378EBD00E49C01 /* ClimbBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F44921378EBD00E49C01 /* ClimbBuddyUITests.swift */; };
+		64B0376C2137961200AF6B1B /* ClimbGrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B0376B2137961200AF6B1B /* ClimbGrade.swift */; };
+		64B0376E2137967A00AF6B1B /* RatingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B0376D2137967A00AF6B1B /* RatingType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		64A9F44521378EBD00E49C01 /* ClimbBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimbBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A9F44921378EBD00E49C01 /* ClimbBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbBuddyUITests.swift; sourceTree = "<group>"; };
 		64A9F44B21378EBD00E49C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64B0376B2137961200AF6B1B /* ClimbGrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbGrade.swift; sourceTree = "<group>"; };
+		64B0376D2137967A00AF6B1B /* RatingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		64A9F42521378EBC00E49C01 /* ClimbBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				64B0376A213795DD00AF6B1B /* Controllers */,
+				64B03769213795D600AF6B1B /* Models */,
 				64A9F42621378EBC00E49C01 /* AppDelegate.swift */,
 				64A9F42821378EBC00E49C01 /* ViewController.swift */,
 				64A9F42A21378EBC00E49C01 /* Main.storyboard */,
@@ -126,6 +132,22 @@
 				64A9F44B21378EBD00E49C01 /* Info.plist */,
 			);
 			path = ClimbBuddyUITests;
+			sourceTree = "<group>";
+		};
+		64B03769213795D600AF6B1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64B0376B2137961200AF6B1B /* ClimbGrade.swift */,
+				64B0376D2137967A00AF6B1B /* RatingType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		64B0376A213795DD00AF6B1B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B0376E2137967A00AF6B1B /* RatingType.swift in Sources */,
 				64A9F42F21378EBC00E49C01 /* ClimbBuddy.xcdatamodeld in Sources */,
+				64B0376C2137961200AF6B1B /* ClimbGrade.swift in Sources */,
 				64A9F42921378EBC00E49C01 /* ViewController.swift in Sources */,
 				64A9F42721378EBC00E49C01 /* AppDelegate.swift in Sources */,
 			);
@@ -437,12 +461,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25JZKQ2C55;
 				INFOPLIST_FILE = ClimbBuddy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kristineotto.ClimbBuddy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kristineotto.ClimbBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,12 +480,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25JZKQ2C55;
 				INFOPLIST_FILE = ClimbBuddy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kristineotto.ClimbBuddy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kristineotto.ClimbBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
