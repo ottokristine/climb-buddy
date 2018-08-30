@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		64A9F42721378EBC00E49C01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F42621378EBC00E49C01 /* AppDelegate.swift */; };
-		64A9F42921378EBC00E49C01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F42821378EBC00E49C01 /* ViewController.swift */; };
+		64A9F42921378EBC00E49C01 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F42821378EBC00E49C01 /* MainViewController.swift */; };
 		64A9F42C21378EBC00E49C01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A9F42A21378EBC00E49C01 /* Main.storyboard */; };
 		64A9F42F21378EBC00E49C01 /* ClimbBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F42D21378EBC00E49C01 /* ClimbBuddy.xcdatamodeld */; };
 		64A9F43121378EBD00E49C01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A9F43021378EBD00E49C01 /* Assets.xcassets */; };
@@ -17,6 +17,9 @@
 		64A9F44A21378EBD00E49C01 /* ClimbBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F44921378EBD00E49C01 /* ClimbBuddyUITests.swift */; };
 		64B0376C2137961200AF6B1B /* ClimbGrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B0376B2137961200AF6B1B /* ClimbGrade.swift */; };
 		64B0376E2137967A00AF6B1B /* RatingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B0376D2137967A00AF6B1B /* RatingType.swift */; };
+		64C0C8062138B30A00BAD8ED /* ClimBuddyMainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C0C8052138B30A00BAD8ED /* ClimBuddyMainScreen.storyboard */; };
+		64C0C8082138B55C00BAD8ED /* ClimbBuddyMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0C8072138B55C00BAD8ED /* ClimbBuddyMainViewController.swift */; };
+		64C0C80B2138B65600BAD8ED /* ClimbBuddyCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0C80A2138B65600BAD8ED /* ClimbBuddyCoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,7 @@
 /* Begin PBXFileReference section */
 		64A9F42321378EBC00E49C01 /* ClimbBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimbBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A9F42621378EBC00E49C01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		64A9F42821378EBC00E49C01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64A9F42821378EBC00E49C01 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		64A9F42B21378EBC00E49C01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64A9F42E21378EBC00E49C01 /* ClimbBuddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClimbBuddy.xcdatamodel; sourceTree = "<group>"; };
 		64A9F43021378EBD00E49C01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +56,9 @@
 		64A9F44B21378EBD00E49C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64B0376B2137961200AF6B1B /* ClimbGrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbGrade.swift; sourceTree = "<group>"; };
 		64B0376D2137967A00AF6B1B /* RatingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingType.swift; sourceTree = "<group>"; };
+		64C0C8052138B30A00BAD8ED /* ClimBuddyMainScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClimBuddyMainScreen.storyboard; sourceTree = "<group>"; };
+		64C0C8072138B55C00BAD8ED /* ClimbBuddyMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbBuddyMainViewController.swift; sourceTree = "<group>"; };
+		64C0C80A2138B65600BAD8ED /* ClimbBuddyCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbBuddyCoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +109,12 @@
 		64A9F42521378EBC00E49C01 /* ClimbBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				64C0C8092138B64000BAD8ED /* DataControllers */,
+				64C0C8042138B2CE00BAD8ED /* Storyboards */,
 				64B0376A213795DD00AF6B1B /* Controllers */,
 				64B03769213795D600AF6B1B /* Models */,
 				64A9F42621378EBC00E49C01 /* AppDelegate.swift */,
-				64A9F42821378EBC00E49C01 /* ViewController.swift */,
-				64A9F42A21378EBC00E49C01 /* Main.storyboard */,
 				64A9F43021378EBD00E49C01 /* Assets.xcassets */,
-				64A9F43221378EBD00E49C01 /* LaunchScreen.storyboard */,
 				64A9F43521378EBD00E49C01 /* Info.plist */,
 				64A9F42D21378EBC00E49C01 /* ClimbBuddy.xcdatamodeld */,
 			);
@@ -146,8 +151,28 @@
 		64B0376A213795DD00AF6B1B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				64A9F42821378EBC00E49C01 /* MainViewController.swift */,
+				64C0C8072138B55C00BAD8ED /* ClimbBuddyMainViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		64C0C8042138B2CE00BAD8ED /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				64A9F42A21378EBC00E49C01 /* Main.storyboard */,
+				64A9F43221378EBD00E49C01 /* LaunchScreen.storyboard */,
+				64C0C8052138B30A00BAD8ED /* ClimBuddyMainScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		64C0C8092138B64000BAD8ED /* DataControllers */ = {
+			isa = PBXGroup;
+			children = (
+				64C0C80A2138B65600BAD8ED /* ClimbBuddyCoreDataManager.swift */,
+			);
+			path = DataControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +282,7 @@
 				64A9F43421378EBD00E49C01 /* LaunchScreen.storyboard in Resources */,
 				64A9F43121378EBD00E49C01 /* Assets.xcassets in Resources */,
 				64A9F42C21378EBC00E49C01 /* Main.storyboard in Resources */,
+				64C0C8062138B30A00BAD8ED /* ClimBuddyMainScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +308,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				64B0376E2137967A00AF6B1B /* RatingType.swift in Sources */,
+				64C0C80B2138B65600BAD8ED /* ClimbBuddyCoreDataManager.swift in Sources */,
 				64A9F42F21378EBC00E49C01 /* ClimbBuddy.xcdatamodeld in Sources */,
+				64C0C8082138B55C00BAD8ED /* ClimbBuddyMainViewController.swift in Sources */,
 				64B0376C2137961200AF6B1B /* ClimbGrade.swift in Sources */,
-				64A9F42921378EBC00E49C01 /* ViewController.swift in Sources */,
+				64A9F42921378EBC00E49C01 /* MainViewController.swift in Sources */,
 				64A9F42721378EBC00E49C01 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
