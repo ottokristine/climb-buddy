@@ -38,13 +38,11 @@ class ClimbBuddyMainViewController: UITableViewController, FBSDKLoginButtonDeleg
             print("Permission was denied")
             return
         }
-        let grantedPermissions = !result.grantedPermissions.isEmpty
-        let token = result.token!
+        //let grantedPermissions = !result.grantedPermissions.isEmpty
+        //let token = result.token!
         let request = FBSDKGraphRequest.init(graphPath: "me", parameters: ["fields":"first_name,last_name,email, picture.type(large)"], httpMethod: "GET")!
-        //let request = FBSDKGraphRequest.init(graphPath: "me", parameters: ["fields":"first_name,last_name,email, picture.type(large)"], accessToken: token.current, httpMethod: .GET, apiVersion: FacebookCore.GraphAPIVersion.defaultVersion)
         request.start(completionHandler: { (requestResult, response, error) in
             if error == nil {
-                print(response)
                 if let responseDictionary = (response as? NSDictionary) {
                     let email = responseDictionary["email"] as! String
                     let firstName = responseDictionary["first_name"] as! String
@@ -65,6 +63,7 @@ class ClimbBuddyMainViewController: UITableViewController, FBSDKLoginButtonDeleg
     }
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         print("logged out")
+        UserDefaults.sharedInstance.loggedInUser = nil
     }
     @IBAction func addClimbButton_Tap(_ sender: Any) {
         print("Tapped")

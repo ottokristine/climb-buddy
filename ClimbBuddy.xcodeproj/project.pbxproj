@@ -162,6 +162,7 @@
 		64B03769213795D600AF6B1B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				64C0C8E22138F7D600BAD8ED /* UserProfile.swift */,
 				64B0376B2137961200AF6B1B /* ClimbGrade.swift */,
 				64B0376D2137967A00AF6B1B /* RatingType.swift */,
 			);
@@ -191,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				64C0C80A2138B65600BAD8ED /* ClimbBuddyCoreDataManager.swift */,
-				64C0C8E22138F7D600BAD8ED /* UserProfile.swift */,
 				64C0C8E42138F86900BAD8ED /* UserDefaults.swift */,
 			);
 			path = DataControllers;
