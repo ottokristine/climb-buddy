@@ -25,6 +25,8 @@
 		64C0C8DA2138E73600BAD8ED /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C0C8D52138E73600BAD8ED /* FBSDKCoreKit.framework */; };
 		64C0C8DD2138E73E00BAD8ED /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C0C8DC2138E73E00BAD8ED /* Bolts.framework */; };
 		64C0C8E12138E74600BAD8ED /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C0C8DF2138E74600BAD8ED /* FBSDKShareKit.framework */; };
+		64C0C8E32138F7D600BAD8ED /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0C8E22138F7D600BAD8ED /* UserProfile.swift */; };
+		64C0C8E52138F86900BAD8ED /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0C8E42138F86900BAD8ED /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		64C0C8D52138E73600BAD8ED /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "ClimbBuddy/FacebookSDKs-iOS-4/FBSDKCoreKit.framework"; sourceTree = SOURCE_ROOT; };
 		64C0C8DC2138E73E00BAD8ED /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "ClimbBuddy/FacebookSDKs-iOS-4/Bolts.framework"; sourceTree = SOURCE_ROOT; };
 		64C0C8DF2138E74600BAD8ED /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "ClimbBuddy/FacebookSDKs-iOS-4/FBSDKShareKit.framework"; sourceTree = SOURCE_ROOT; };
+		64C0C8E22138F7D600BAD8ED /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		64C0C8E42138F86900BAD8ED /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				64C0C80A2138B65600BAD8ED /* ClimbBuddyCoreDataManager.swift */,
+				64C0C8E22138F7D600BAD8ED /* UserProfile.swift */,
+				64C0C8E42138F86900BAD8ED /* UserDefaults.swift */,
 			);
 			path = DataControllers;
 			sourceTree = "<group>";
@@ -339,6 +345,8 @@
 				64C0C80B2138B65600BAD8ED /* ClimbBuddyCoreDataManager.swift in Sources */,
 				64A9F42F21378EBC00E49C01 /* ClimbBuddy.xcdatamodeld in Sources */,
 				64C0C8082138B55C00BAD8ED /* ClimbBuddyMainViewController.swift in Sources */,
+				64C0C8E32138F7D600BAD8ED /* UserProfile.swift in Sources */,
+				64C0C8E52138F86900BAD8ED /* UserDefaults.swift in Sources */,
 				64B0376C2137961200AF6B1B /* ClimbGrade.swift in Sources */,
 				64A9F42921378EBC00E49C01 /* MainViewController.swift in Sources */,
 				64A9F42721378EBC00E49C01 /* AppDelegate.swift in Sources */,
