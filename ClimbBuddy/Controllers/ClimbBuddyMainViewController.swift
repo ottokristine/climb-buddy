@@ -8,11 +8,17 @@
 
 import Foundation
 import UIKit
+import FBSDKLoginKit
+import FBSDKCoreKit
 
 class ClimbBuddyMainViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let loginButton = FBSDKLoginButton(type: .roundedRect)
+        loginButton.center = self.view.center
+        self.view.addSubview(loginButton)
     }
     @IBAction func addClimbButton_Tap(_ sender: Any) {
         print("Tapped")

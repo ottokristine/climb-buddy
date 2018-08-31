@@ -20,6 +20,11 @@
 		64C0C8062138B30A00BAD8ED /* ClimBuddyMainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C0C8052138B30A00BAD8ED /* ClimBuddyMainScreen.storyboard */; };
 		64C0C8082138B55C00BAD8ED /* ClimbBuddyMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0C8072138B55C00BAD8ED /* ClimbBuddyMainViewController.swift */; };
 		64C0C80B2138B65600BAD8ED /* ClimbBuddyCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0C80A2138B65600BAD8ED /* ClimbBuddyCoreDataManager.swift */; };
+		64C0C8D82138E73600BAD8ED /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C0C8D32138E73600BAD8ED /* FBSDKLoginKit.framework */; };
+		64C0C8D92138E73600BAD8ED /* FBNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C0C8D42138E73600BAD8ED /* FBNotifications.framework */; };
+		64C0C8DA2138E73600BAD8ED /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C0C8D52138E73600BAD8ED /* FBSDKCoreKit.framework */; };
+		64C0C8DD2138E73E00BAD8ED /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C0C8DC2138E73E00BAD8ED /* Bolts.framework */; };
+		64C0C8E12138E74600BAD8ED /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C0C8DF2138E74600BAD8ED /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		64C0C8052138B30A00BAD8ED /* ClimBuddyMainScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClimBuddyMainScreen.storyboard; sourceTree = "<group>"; };
 		64C0C8072138B55C00BAD8ED /* ClimbBuddyMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbBuddyMainViewController.swift; sourceTree = "<group>"; };
 		64C0C80A2138B65600BAD8ED /* ClimbBuddyCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbBuddyCoreDataManager.swift; sourceTree = "<group>"; };
+		64C0C8D32138E73600BAD8ED /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "ClimbBuddy/FacebookSDKs-iOS-4/FBSDKLoginKit.framework"; sourceTree = SOURCE_ROOT; };
+		64C0C8D42138E73600BAD8ED /* FBNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBNotifications.framework; path = "ClimbBuddy/FacebookSDKs-iOS-4/FBNotifications.framework"; sourceTree = SOURCE_ROOT; };
+		64C0C8D52138E73600BAD8ED /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "ClimbBuddy/FacebookSDKs-iOS-4/FBSDKCoreKit.framework"; sourceTree = SOURCE_ROOT; };
+		64C0C8DC2138E73E00BAD8ED /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "ClimbBuddy/FacebookSDKs-iOS-4/Bolts.framework"; sourceTree = SOURCE_ROOT; };
+		64C0C8DF2138E74600BAD8ED /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "ClimbBuddy/FacebookSDKs-iOS-4/FBSDKShareKit.framework"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64C0C8E12138E74600BAD8ED /* FBSDKShareKit.framework in Frameworks */,
+				64C0C8D82138E73600BAD8ED /* FBSDKLoginKit.framework in Frameworks */,
+				64C0C8DA2138E73600BAD8ED /* FBSDKCoreKit.framework in Frameworks */,
+				64C0C8D92138E73600BAD8ED /* FBNotifications.framework in Frameworks */,
+				64C0C8DD2138E73E00BAD8ED /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +124,7 @@
 		64A9F42521378EBC00E49C01 /* ClimbBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				64C0C8D12138E72000BAD8ED /* FacebookSDks */,
 				64C0C8092138B64000BAD8ED /* DataControllers */,
 				64C0C8042138B2CE00BAD8ED /* Storyboards */,
 				64B0376A213795DD00AF6B1B /* Controllers */,
@@ -173,6 +189,18 @@
 				64C0C80A2138B65600BAD8ED /* ClimbBuddyCoreDataManager.swift */,
 			);
 			path = DataControllers;
+			sourceTree = "<group>";
+		};
+		64C0C8D12138E72000BAD8ED /* FacebookSDks */ = {
+			isa = PBXGroup;
+			children = (
+				64C0C8DF2138E74600BAD8ED /* FBSDKShareKit.framework */,
+				64C0C8DC2138E73E00BAD8ED /* Bolts.framework */,
+				64C0C8D42138E73600BAD8ED /* FBNotifications.framework */,
+				64C0C8D52138E73600BAD8ED /* FBSDKCoreKit.framework */,
+				64C0C8D32138E73600BAD8ED /* FBSDKLoginKit.framework */,
+			);
+			path = FacebookSDks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -490,6 +518,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 25JZKQ2C55;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ClimbBuddy/FacebookSDKs-iOS-4",
+				);
 				INFOPLIST_FILE = ClimbBuddy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -509,6 +541,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 25JZKQ2C55;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ClimbBuddy/FacebookSDKs-iOS-4",
+				);
 				INFOPLIST_FILE = ClimbBuddy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
