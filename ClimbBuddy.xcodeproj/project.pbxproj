@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		646377CA2141DA0000789B7D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646377C92141DA0000789B7D /* LoginViewController.swift */; };
 		64A9F42721378EBC00E49C01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F42621378EBC00E49C01 /* AppDelegate.swift */; };
 		64A9F42921378EBC00E49C01 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F42821378EBC00E49C01 /* MainViewController.swift */; };
 		64A9F42C21378EBC00E49C01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A9F42A21378EBC00E49C01 /* Main.storyboard */; };
@@ -17,7 +18,7 @@
 		64A9F44A21378EBD00E49C01 /* ClimbBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F44921378EBD00E49C01 /* ClimbBuddyUITests.swift */; };
 		64B0376C2137961200AF6B1B /* ClimbGrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B0376B2137961200AF6B1B /* ClimbGrade.swift */; };
 		64B0376E2137967A00AF6B1B /* RatingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B0376D2137967A00AF6B1B /* RatingType.swift */; };
-		64C0C8062138B30A00BAD8ED /* ClimBuddyMainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C0C8052138B30A00BAD8ED /* ClimBuddyMainScreen.storyboard */; };
+		64C0C8062138B30A00BAD8ED /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C0C8052138B30A00BAD8ED /* Login.storyboard */; };
 		64C0C8082138B55C00BAD8ED /* ClimbBuddyMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0C8072138B55C00BAD8ED /* ClimbBuddyMainViewController.swift */; };
 		64C0C80B2138B65600BAD8ED /* ClimbBuddyCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0C80A2138B65600BAD8ED /* ClimbBuddyCoreDataManager.swift */; };
 		64C0C8D82138E73600BAD8ED /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64C0C8D32138E73600BAD8ED /* FBSDKLoginKit.framework */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		646377C92141DA0000789B7D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		64A9F42321378EBC00E49C01 /* ClimbBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimbBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A9F42621378EBC00E49C01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64A9F42821378EBC00E49C01 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +65,7 @@
 		64A9F44B21378EBD00E49C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64B0376B2137961200AF6B1B /* ClimbGrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbGrade.swift; sourceTree = "<group>"; };
 		64B0376D2137967A00AF6B1B /* RatingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingType.swift; sourceTree = "<group>"; };
-		64C0C8052138B30A00BAD8ED /* ClimBuddyMainScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClimBuddyMainScreen.storyboard; sourceTree = "<group>"; };
+		64C0C8052138B30A00BAD8ED /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		64C0C8072138B55C00BAD8ED /* ClimbBuddyMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbBuddyMainViewController.swift; sourceTree = "<group>"; };
 		64C0C80A2138B65600BAD8ED /* ClimbBuddyCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbBuddyCoreDataManager.swift; sourceTree = "<group>"; };
 		64C0C8D32138E73600BAD8ED /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "ClimbBuddy/FacebookSDKs-iOS-4/FBSDKLoginKit.framework"; sourceTree = SOURCE_ROOT; };
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				64A9F42821378EBC00E49C01 /* MainViewController.swift */,
+				646377C92141DA0000789B7D /* LoginViewController.swift */,
 				64C0C8072138B55C00BAD8ED /* ClimbBuddyMainViewController.swift */,
 			);
 			path = Controllers;
@@ -183,7 +186,7 @@
 			children = (
 				64A9F42A21378EBC00E49C01 /* Main.storyboard */,
 				64A9F43221378EBD00E49C01 /* LaunchScreen.storyboard */,
-				64C0C8052138B30A00BAD8ED /* ClimBuddyMainScreen.storyboard */,
+				64C0C8052138B30A00BAD8ED /* Login.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -316,7 +319,7 @@
 				64A9F43421378EBD00E49C01 /* LaunchScreen.storyboard in Resources */,
 				64A9F43121378EBD00E49C01 /* Assets.xcassets in Resources */,
 				64A9F42C21378EBC00E49C01 /* Main.storyboard in Resources */,
-				64C0C8062138B30A00BAD8ED /* ClimBuddyMainScreen.storyboard in Resources */,
+				64C0C8062138B30A00BAD8ED /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +352,7 @@
 				64C0C8E52138F86900BAD8ED /* UserDefaults.swift in Sources */,
 				64B0376C2137961200AF6B1B /* ClimbGrade.swift in Sources */,
 				64A9F42921378EBC00E49C01 /* MainViewController.swift in Sources */,
+				646377CA2141DA0000789B7D /* LoginViewController.swift in Sources */,
 				64A9F42721378EBC00E49C01 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

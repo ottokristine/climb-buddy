@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Climb Buddy Main View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="NxQ-3p-pfp">
             <objects>
-                <tableViewController id="vLh-ZS-Nyj" customClass="ClimbBuddyMainViewController" customModule="ClimbBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="vLh-ZS-Nyj" customClass="LoginViewController" customModule="ClimbBuddy" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ou3-ih-nWc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
